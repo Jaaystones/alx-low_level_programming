@@ -1,15 +1,19 @@
-#include <stdio.h> 
-/** 
- * main - Entry point 
- * 
- * Return:Always 0 (sucess) 
- */ 
-int main(void) 
-{ 
-        char low; 
-  
-        for (low = 'z'; low >= 'a'; low--) 
-                putchar(low); 
-        putchar('\n'); 
-        return (0); 
+#include <stdio.h>
+
+/**
+ * main - program that prints the lowercase alphabet in reverse.
+ * You can only use the putchar function
+ * Return: 0
+ */
+
+int main(void)
+{
+int n = 122;
+while (n > 96)
+{
+putchar(n);
+n -= 1;
+}
+putchar('\n');
+return (0);
 }
