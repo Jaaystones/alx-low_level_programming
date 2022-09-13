@@ -4,7 +4,7 @@
  * To followed by a new line.
  * Return: Always 0 (Success)
  */
-int _putchar(char c);
+int_putchar(char c);
 {
 	char *c = "main";
 
