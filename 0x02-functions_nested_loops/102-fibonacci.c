@@ -1,26 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-#include <iostream>
-using namespace std;
+
 /**
  * main -  prints the sum of all the multiples of 3 or 5 below 1024
  *
  * Return: Always 0 (Success)
  */
 int main(void)
-{ 
-	int sum = 0;
+{        
+        int i = 0;
+	long j = 1, k = 2;
 
-	for (int i = 3; i < 1024; i++) 
+	while (i < 50)
 	{
+		if (i == 0)
+			printf("%ld", j);
+		else if (i == 1)
+			printf(", %ld", k);
+		else
+		{
+			k += j;
+			j = k - j;
+			printf(", %ld", k);
+		}
 
-		if (i%3==0 or i%5==0)
-
-			sum += i;
+		++i;
 	}
 
-	cout << sum;
-
-	return 0;
+	printf("\n");
+	return (0);
 }
