@@ -1,17 +1,17 @@
 #include "main.h"
 /**
- * main - Write a program that prints putchar, followed by a new line.
- *
+ * main - Write a program that prints putchar
+ * To followed by a new line.
  * Return: Always 0 (Success)
  */
-int main(void)
+int _putchar(char c);
 {
-	char *sh = "main";
+	char *c = "main";
 
-	while (*sh)
+	while (*c)
 	{
-		_putchar(*sh);
-		sh++;
+		_putchar(*c);
+		c++;
 	}
 	_putchar('\n');
 
