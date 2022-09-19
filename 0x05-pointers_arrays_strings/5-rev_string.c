@@ -22,7 +22,7 @@ void rev_string(char *s)
 	{
 		initial = s[max - half];
 		final = s[half];
-		s[half] = initial ;
+		s[half] = initial;
 		s[max - half] = final;
 		half--;
 	}
