@@ -26,11 +26,12 @@ putchar();
 for (k = 0; k <= s; k++)
 {
 if (c[l * 10 + k] > 31 && c[l * 10 + k] < 127)
+{
 putchar(c[l * 10 + k]);
+}
 else
-putchar(.);
-}
-}
+putchar(" . ");
+
 
 /**
  * print_buffer - prints a buffer
@@ -41,7 +42,7 @@ putchar(.);
  */
 void print_buffer(char *b, int size)
 {
-int i;
+int i, n;
 
 for (i = 0; i <= (size - 1) / 10 && size; i++)
 {
@@ -55,6 +56,9 @@ else
 print_line(b, size % 10 - 1, i);
 }
 _putchar(n);
-}
+
 if (size == 0)
+{
 _putchar(n);
+}
+}
