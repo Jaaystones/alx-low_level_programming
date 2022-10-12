@@ -10,8 +10,10 @@
 typedef struct op
 {
 		char *op;
-		        int (*f)(int a, int b);
+		int (*f)(int a, int b);
 } op_t;
+
+
 #endif
 
 #ifndef FUNCTIONS_H
