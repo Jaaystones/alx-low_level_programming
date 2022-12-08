@@ -8,9 +8,7 @@ This project in the low_level_programming series is about:
 
 * How to use doubly linked lists
 
-* Start to look for the right source of information without too much help
 
----
 File|Task
 ---|---
 [0-print_dlistint](./0-print_dlistint) | A C function that prints all the elements of a list
